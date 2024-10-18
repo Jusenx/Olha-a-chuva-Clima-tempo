@@ -48,7 +48,11 @@ function initMap() {
           position: pos,
           map: map,
           title: "Você está aqui!",
-          icon: "http://www.w3.org/2000/svg"
+          icon: {
+            url: "https://raw.githubusercontent.com/Jusenx/Olha-a-chuva-Clima-tempo/d0fc110dc2c226a157bcc1d2fe82e462923c67bc/img/person-standing.svg",
+            scaledSize: new google.maps.Size(30,30) // Tamanho maior
+
+          },
         });
       },
       (error) => {
